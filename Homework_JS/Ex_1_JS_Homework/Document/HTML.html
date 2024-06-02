@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+    <title>Homework</title>
+</head>
+
+<body>
+
+
+
+<main class = "container">
+
+
+
+<div class="row">
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input id="userName"
+                type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        <button id="btnSendName"
+                class="btn btn-outline-secondary" type="button">Send Name</button>
+    </div>
+
+
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon2">@</span>
+        <input id="userAge"
+               type="number" min="0" max="100" value="20" class="form-control" placeholder="Age" aria-label="Username" aria-describedby="basic-addon2">
+        <button id="btnSendAge"
+                class="btn btn-outline-secondary" type="button">Send Age</button>
+    </div>
+    <div id="divAlert" class="alert alert-primary" role="alert">
+
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon3">S</span>
+        <input id="userSquare"
+               type="number" min="0"  value="0" class="form-control" placeholder="Square" aria-label="UserSquare" aria-describedby="basic-addon3">
+        <button id="btnSendSquare"
+                class="btn btn-outline-secondary" type="button">Send Square</button>
+    </div>
+    <div id="divAlertSquare" class="alert alert-primary" role="button">
+
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon4">D</span>
+        <input id="userDiameter"
+               type="number" min="0"  value="0" class="form-control" placeholder="Diameter" aria-label="UserDiameter" aria-describedby="basic-addon3">
+        <button id="btnSendDiameter"
+                class="btn btn-outline-secondary" type="button">Send Diameter</button>
+    </div>
+    <div id="divAlertDiameter" class="alert alert-primary" role="application">
+
+    </div>
+
+    <div>
+    <div class="input-group">
+        <span class="input-group-text">Distance and km/h</span>
+        <input id="userDistance"
+                type="text" aria-label="First name" class="form-control">
+        <input id="userKmH"
+                type="text" aria-label="Last name" class="form-control">
+        <button id="btnSendDistance"
+                class="btn btn-outline-secondary" type="button">Send Distance</button>
+
+    </div>
+</div>
+    <div id="divAlertDistance" class="alert alert-primary" role="application">
+
+    </div>
+
+    <div>
+    <div class="input-group">
+        <span class="input-group-text">$ -> Euro</span>
+        <input id="userCurrencyUSD"
+                type="text" aria-label="First name" class="form-control">
+        <input id="userEuro"
+                type="text" aria-label="Last name" class="form-control">
+        <button id="btnSendCurrency"
+                class="btn btn-outline-secondary" type="button">Send Currency</button>
+
+    </div>
+</div>
+    <div id="divAlertCurrency" class="alert alert-primary" role="application">
+
+    </div>
+
+    <div>
+    <div class="input-group">
+        <span class="input-group-text">SSD</span>
+        <input id="userSSD"
+                type="text" aria-label="First name" class="form-control">
+        <input id="userFile"
+                type="text" value="850" aria-label="Last name" class="form-control">
+        <button id="btnSendSSD"
+                class="btn btn-outline-secondary" type="button">Send SSD</button>
+
+    </div>
+</div>
+    <div id="divAlertSSD" class="alert alert-primary" role="application">
+
+    </div>
+
+    <div class="input-group">
+        <span class="input-group-text">CountChocolate</span>
+        <input id="userWallet"
+                type="text" aria-label="First name" class="form-control">
+        <input id="userChocolate"
+                type="text" value="15" aria-label="Last name" class="form-control">
+        <button id="btnBuy"
+                class="btn btn-outline-secondary" type="button">Send Buy</button>
+
+    </div>
+</div>
+    <div id="divBuyChocolate" class="alert alert-primary" role="application">
+
+    </div>
+    <div class="input-group">
+        <span class="input-group-text">N</span>
+        <input id="userNumber"
+               type="text" aria-label="First name" class="form-control">
+        <input id="userRevers"
+               type="text"  aria-label="Last name" class="form-control">
+        <button id="btnNumber"
+                class="btn btn-outline-secondary" type="button">Revers</button>
+
+    </div>
+    <div class="input-group">
+        <span class="input-group-text">N</span>
+        <input id="userNumber1"
+               type="text" aria-label="First name" class="form-control">
+        <input id="userTwo"
+               type="text"  aria-label="Last name" class="form-control">
+        <button id="btnOneTwo"
+                class="btn btn-outline-secondary" type="button">1:2</button>
+
+    </div>
+</div>
+
+
+
+</main>
+
+<script>
+
+  const  inputUserName = document.getElementById("userName")
+  const btnSendName = document.getElementById("btnSendName")
+
+  const inputUserAge = document.getElementById("userAge")
+const divAlerts = document.getElementById("divAlert")
+
+  const inputUserSquare = document.getElementById("userSquare")
+  const bntSendSquare = document.getElementById("btnSendSquare")
+
+  const inputuserDiameter = document.getElementById("userDiameter")
+  const btnSendDiameter = document.getElementById("btnSendDiameter")
+
+  const inputuserDistance = document.getElementById("userDistance")
+  const inputuserKmH = document.getElementById("userKmH")
+  const btnSendDistance = document.getElementById("btnSendDistance")
+   //
+  //Convert
+  //
+
+  const inputuserCurrencyUSD = document.getElementById("userCurrencyUSD")
+  const inputuserEuro = document.getElementById("userEuro")
+  const btnSendCurrency = document.getElementById("btnSendCurrency")
+
+  //
+  //SSD
+  //
+
+  const inputuserSSD = document.getElementById("userSSD")
+  const inputuserFile = document.getElementById("userFile")
+  const btnSendSSD = document.getElementById("btnSendSSD")
+
+  //
+  //Chocolate
+  //
+
+  let inputuserWallet = document.getElementById("userWallet")
+  let inputuserChocolate = document.getElementById("userChocolate")
+  let inputbtnBuy = document.getElementById("btnBuy")
+
+  //
+  //NUMBER REVERS
+  //
+
+
+  let inputuserNumber = document.getElementById("userNumber")
+  let inputuserRevers = document.getElementById("userRevers")
+  let inputbtnNumber = document.getElementById("btnNumber")
+
+let inputuserNumber1 = document.getElementById("userNumber1")
+let inputuserTwo = document.getElementById("userTwo")
+let inputbtnOneTwo = document.getElementById("btnOneTwo")
+  //console.log(inputUserName)
+
+  //console.log(typeof (inputUserName))
+
+  btnSendName.onclick = () => {
+      console.log(inputUserName.value)
+  }
+
+  inputUserAge.onchange = () => {
+
+      console.log(inputUserAge.value)
+
+      if (inputUserAge.value < 18)
+      {
+          //inputUserAge.value = 18
+          inputUserAge.style.border = '1px solid red'
+
+          divAlerts.innerText = "Вам меньше 18"
+
+          divAlerts.className = 'alert alert-danger'
+      }
+      else
+      {
+          inputUserAge.style.border = '1px solid transparent'
+          divAlerts.innerText = "Вам есть 18 - добро пожаловать"
+          divAlerts.className = 'alert alert-success'
+
+
+      }
+
+
+  }
+  inputUserSquare.onchange = () => {
+      console.log(inputUserSquare.value + "сторона квадрата")
+  }
+  bntSendSquare.onclick = () => {
+      console.log( inputUserSquare.value*4 ,'Периметр квадрата');
+      divAlertSquare.innerText = inputUserSquare.value*4+" " +'Периметр квадрата' ;
+  }
+
+  inputuserDiameter.onchange = () =>
+  {
+      console.log(inputuserDiameter.value +" "+ "радиус окружности")
+  }
+  btnSendDiameter.onclick = () => {
+      inputuserDiameter * 3,14
+      console.log("Радиус окружности "+" " + inputuserDiameter.value * 3,14)
+      divAlertDiameter.innerText = inputuserDiameter.value*3.14;
+
+  }
+
+  inputuserDistance.onchange = () =>
+  {
+      console.log(inputuserDistance.value +""+ "Км димтсанция")
+  }
+  inputuserKmH.onchange = () =>
+  {
+      console.log(inputuserKmH.value+"" + "скорость")
+
+  }
+  btnSendDistance.onclick = () =>
+  {
+      var Path = inputuserDistance.value/inputuserKmH.value
+      console.log(Path)
+
+      divAlertDistance.innerText = Path + " " + " часов"+ " " + "время вашего пути";
+  }
+  //
+//Обменик
+  //
+
+
+  inputuserCurrencyUSD.onchange = () =>
+  {
+      console.log(inputuserCurrencyUSD.value +""+ "Доларов")
+  }
+
+
+  btnSendCurrency.onclick = () =>
+  {
+      var Dollar = inputuserCurrencyUSD.value*0.85;
+      console.log(Dollar)
+
+      inputuserEuro.value = Dollar ;
+      console.log(inputuserEuro.value+"" + "Евро")
+      divAlertCurrency.innerText = Dollar + " " + " Евро"
+  }
+
+//
+  //SSD
+  //
+
+  inputuserSSD.onclick = () =>
+  {
+     console.log(inputuserSSD.value+"Памяти на флешке" )
+
+  }
+  btnSendSSD.onclick = () =>
+  {
+      inputuserFile.value  = inputuserSSD.value/ inputuserFile.value;
+      divAlertSSD.innerText = inputuserFile.value+ "Файлов можно загрузить ";
+  }
+//
+  //выводит сколько шоколадок
+  //
+  let UserWalletclient;
+  inputuserWallet.onchange = () =>
+  {
+      UserWalletclient = inputuserWallet.value;
+      console.log(inputuserWallet.value)
+  }
+
+  let CountChocolate;
+  inputuserChocolate.onchange = () =>
+  {
+      CountChocolate = inputuserChocolate.value;
+      console.log(CountChocolate);
+  }
+
+let RestOfMoney;
+
+  inputbtnBuy.onclick = () =>
+  {
+    RestOfMoney = UserWalletclient/CountChocolate;
+
+      divBuyChocolate.innerText = RestOfMoney+" шоколадок можете купить " + "По цене " + CountChocolate;
+      console.log(RestOfMoney);
+
+  }
+//
+  //NUMBER REVERS
+  //
+  let reversedNumber = 0;
+let numberUser;
+  inputuserNumber.onchange = () => {
+      let inputValue = parseInt(inputuserNumber.value); // Получаем числовое значение из input
+      if (!isNaN(inputValue) && inputValue > 100 && inputValue < 1000) {
+          let numberUser = inputValue; // Сохраняем число в переменную
+
+          while (numberUser > 0) {
+              let digit = numberUser % 10;
+              reversedNumber = reversedNumber * 10 + digit;
+              numberUser = Math.floor(numberUser / 10);
+          }
+          console.log("Reversed Number: " + reversedNumber);
+      } else {
+          console.log("Incorrect number, must be xxx");
+      }
+  };
+
+  inputbtnNumber.onclick = () =>
+  {
+      inputuserRevers.value = reversedNumber;
+
+  }
+
+  let numberOne;
+  inputuserNumber1.onchange =()=>
+  {
+      numberOne = inputuserNumber1;
+  }
+
+  inputbtnOneTwo.onclick = () =>
+  {
+      numberOne = (numberOne % 2 === 0);
+      console.log(numberOne ? "Число четное" : "Число нечетное");
+      inputuserTwo.value = numberOne;
+  }
+
+
+</script>
+
+</body>
+</html>
