@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Title</title>
+</head>
+<body>
+
+<div>
+
+<div class="input-group flex-nowrap">
+    <span class="input-group-text" id="addon-wrapping">Y</span>
+    <input id="UserYear" type="text" class="form-control" placeholder="Year" aria-label="Username" aria-describedby="addon-wrapping">
+
+</div>
+
+    <div id="YearUser" class="alert alert-primary" role="application"> </div>
+
+        <div class="input-group flex-nowrap">
+    <span class="input-group-text" id="addon-wrapping_Sumbal">#</span>
+    <input id="UserSumbal1" type="text" class="form-control" placeholder="Numebr" aria-label="Username1" aria-describedby="addon-wrapping">
+
+    </div>
+
+    <div id="UserSumbal" class="alert alert-primary" role="application">
+
+    </div>
+
+
+    <div class="input-group flex-nowrap">
+    <span class="input-group-text" id="addon-wrapping_Sumbal2">#</span>
+    <input id="UserThreeNumber" type="text" class="form-control" placeholder="Numebr" aria-label="Username1" aria-describedby="addon-wrapping">
+
+    </div>
+
+    <div id="UserNumebr" class="alert alert-primary" role="application">
+
+    </div>
+
+    <div class="input-group flex-nowrap">
+    <span class="input-group-text" id="addon-wrapping_Sumbal3">#</span>
+    <input id="UserNumberYear" type="text" class="form-control" placeholder="Numebr" aria-label="Username1" aria-describedby="addon-wrapping">
+
+    </div>
+
+    <div id="UserYearNext" class="alert alert-primary" role="application">
+
+    </div>
+
+    <div class="input-group flex-nowrap">
+    <span class="input-group-text" id="addon-wrapping_Sumbal4">#</span>
+    <input id="UserPalidrom" type="text" class="form-control" placeholder="Numebr" aria-label="Username1" aria-describedby="addon-wrapping">
+
+    </div>
+
+    <div id="UserP" class="alert alert-primary" role="application">
+
+    </div>
+
+    <form class="row row-cols-lg-auto g-3 align-items-center">
+        <div class="col-12">
+            <label id="UserCount" class="visually-hidden" for="inlineCount">CountMoney</label>
+            <div class="input-group">
+                <div class="input-group-text">$</div>
+                <input  type="text" class="form-control" id="inlineCount" placeholder="CountMoney">
+            </div>
+        </div>
+
+        <div class="col-12">
+            <label  class="visually-hidden" for="selectCurrency">Preference</label>
+            <select  class="form-select" id="selectCurrency">
+                <option selected>Choose...</option>
+                <option id="UserEUR" value="0.9">EUR</option>
+                <option id="UserUAN" value="41">UAN</option>
+                <option id="UserAZN" value="30">AZN</option>
+            </select>
+        </div>
+
+        <div class="col-12">
+            <button id="btnExchange" type="button" class="btn btn-primary">exchange</button>
+        </div>
+    </form>
+
+
+    <div id="UserConvertCount" class="alert alert-primary" role="application">
+
+</div>
+
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping_Sumbal5">#</span>
+        <input id="UserSumBuy" type="text" class="form-control" placeholder="Numebr" aria-label="Username1" aria-describedby="addon-wrapping">
+
+    </div>
+
+    <div id="UserSale" class="alert alert-primary" role="application">
+
+    </div>
+
+
+        <div class="mb-3">
+            <label  class="form-label">Длину окружности</label>
+            <input id="UserCircumference" type="number" class="form-control"  aria-describedby="emailHelp">
+        </div>
+        <div class="mb-4">
+            <label  class="form-label">Периметр квадрата</label>
+            <input id="UserPerimeter" type="number" class="form-control" >
+        </div>
+    <div class="mb-5">
+            <label  class="form-label">М. ли тк окруж поместиться в квадрат</label>
+            <input id="UserCircle" type="text" class="form-control" readonly>
+        </div>
+
+
+
+    <div class="container mt-4">
+
+
+        <p>Таблица с радиокнопками</p>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Вопрос</th>
+                <th scope="col">Ответ</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Сума чисел "2244"</th>
+                <td>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question1" id="question1_answer1" value="Ответ A">
+                        <label class="form-check-label" for="question1_answer1">12</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question1" id="question1_answer2" value="Ответ B">
+                        <label class="form-check-label" for="question1_answer2">3</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question1" id="question1_answer3" value="Ответ C">
+                        <label class="form-check-label" for="question1_answer3">2244</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Сума чисел "118"</th>
+                <td>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question2" id="question2_answer1" value="Ответ X">
+                        <label class="form-check-label" for="question2_answer1">10</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question2" id="question2_answer2" value="Ответ Y">
+                        <label class="form-check-label" for="question2_answer2">5</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question2" id="question2_answer3" value="Ответ Z">
+                        <label class="form-check-label" for="question2_answer3">120</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Сума чисел "34"</th>
+                <td>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question3" id="question3_answer1" value="Ответ 1">
+                        <label class="form-check-label" for="question3_answer1">8</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question3" id="question3_answer2" value="Ответ 2">
+                        <label class="form-check-label" for="question3_answer2">7</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question3" id="question3_answer3" value="Ответ 3">
+                        <label class="form-check-label" for="question3_answer3">134</label>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <input id="UserCountRatings" type="text" name="answer3" class="form-control">
+    </div>
+    <br>
+    <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Day</span>
+        <input id="UserDay" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm2">Month</span>
+        <input id="UserMonth" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm3">Year</span>
+        <input id="UserYearChoise" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Next Day</span>
+        <input id="UserNextYear" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+    </div>
+
+</div>
+
+
+
+<script>
+//
+//Возраст
+//
+    let inputUserYear = document.getElementById("UserYear");
+
+    //
+//спецсимвол
+//
+let inputUserSumbal1 = document.getElementById("UserSumbal1");
+//
+//трехзначное и число
+//
+
+let inputUserThreeNumber = document.getElementById("UserThreeNumber");
+
+//
+//год и проверить, високосный
+//
+
+
+let inputUserNumberYear = document.getElementById("UserNumberYear");
+
+
+//
+//Palidrom
+//
+
+let inputUserPalidrom = document.getElementById("UserPalidrom");
+
+//
+//конвертор
+//
+
+const btnExchange = document.getElementById("btnExchange")
+const selectCurrency = document.getElementById("selectCurrency")
+const inlineCount = document.getElementById("inlineCount")
+
+
+//
+//Sale%
+//
+
+let inputUserSumBuy = document.getElementById("UserSumBuy");
+
+let inputUserSale = document.getElementById("UserSale");
+
+//
+// Окружность круга
+//
+
+let UserCircumference = document.getElementById("UserCircumference");
+let UserPerimeter = document.getElementById("UserPerimeter");
+let UserCircle = document.getElementById("UserCircle");
+
+//
+//Вопрос пользователю
+//
+
+let question1_answer1 = document.getElementById("question1_answer1");
+
+//
+//2
+ let question2_answer1 = document.getElementById("question2_answer1");
+
+ //
+//3
+
+ let question3_answer2 = document.getElementById("question3_answer2");
+
+ let UserCountRatings = document.getElementById("UserCountRatings");
+
+//
+//UserYearNextDay
+//
+
+let UserDay = document.getElementById("UserDay");
+let UserMonth = document.getElementById("UserMonth");
+let UserYearChoise = document.getElementById("UserYearChoise");
+let UserNextYear = document.getElementById("UserNextYear");
+
+
+//
+//Возраст
+//
+
+    inputUserYear.onchange = () =>
+    {
+        let YearOld = parseInt(inputUserYear.value);
+        if (YearOld <= 2) {
+            YearUser.innerText = "Ваш возраст ребенок";
+        } else if (YearOld >= 12 && YearOld <= 18) {
+            YearUser.innerText = "Ваш возраст подросток";
+        } else if (YearOld >= 19 && YearOld <= 59) {
+            YearUser.innerText = "Ваш возраст взрослый";
+        } else {
+            YearUser.innerText = "Вы пенсионер";
+        }
+    }
+
+
+//
+//спецсимвол
+//
+inputUserSumbal1.onchange = () =>
+{
+    let Symbal = parseInt(inputUserSumbal1.value);
+if (Symbal == 1)
+{UserSumbal.innerText = "!";}
+    else if (Symbal == 2)
+    {UserSumbal.innerText = "@";}
+    else if (Symbal == 3)
+    {UserSumbal.innerText = "#";}
+    else if (Symbal == 4){UserSumbal.innerText = "$";}
+    else if (Symbal == 5){UserSumbal.innerText = "%";}
+    else if (Symbal == 6){UserSumbal.innerText = "^";}
+    else if (Symbal == 7){UserSumbal.innerText = "&";}
+    else if (Symbal == 8){UserSumbal.innerText = "*";}
+    else if (Symbal == 9){UserSumbal.innerText = "(";
+    } else {UserSumbal.innerText = ")";
+    }
+}
+
+inputUserThreeNumber.onchange = () => {
+    let CopyNumber = parseInt(inputUserThreeNumber.value); // Преобразуем введенное значение в число
+
+    // Вычисляем остаток от деления на 10, чтобы получить последнюю цифру
+    let ThirdNumber = CopyNumber % 10;
+    // Убираем последнюю цифру из числа
+    CopyNumber = Math.floor(CopyNumber / 10);
+
+    let SecondNumber = CopyNumber % 10;
+    CopyNumber = Math.floor(CopyNumber / 10);
+
+    let FirstNumber = CopyNumber; // Первая цифра - то, что останется
+
+    if (ThirdNumber == FirstNumber || FirstNumber == SecondNumber || SecondNumber == ThirdNumber)
+    {
+        UserNumebr.innerText = "числа имеют повторения";
+    }
+    else {UserNumebr.innerText = "";}
+//
+    //Year
+    //
+
+    inputUserNumberYear.onchange = () => {
+        let year = parseInt(inputUserNumberYear.value);
+
+        if ((year % 400 === 0) || (year % 4 === 0 && year % 100 !== 0)) {
+            UserYearNext.innerText = "високосный год.";
+        } else {
+            UserYearNext.innerText = "не високосный год.";
+        }
+    };
+
+};
+//
+//palidrom
+//
+function isPalindrome(number) {
+    const originalNumber = number; // Сохраняем оригинальное число
+    let reverseNumber = 0;
+
+    // Инвертируем число, чтобы проверить, является ли оно палиндромом
+    while (number > 0) {
+        const remainder = number % 10;
+        reverseNumber = (reverseNumber * 10) + remainder;
+        number = Math.floor(number / 10);
+    }
+
+    // Сравниваем исходное число с его обратной копией
+    if (originalNumber === reverseNumber) {
+        return true; // Число является палиндромом
+    } else {
+        return false; // Число не является палиндромом
+    }
+}
+inputUserPalidrom.onchange = () =>
+{
+    if (inputUserPalidrom.length === 5) {
+        const number = parseInt(inputUserPalidrom);
+        if (isPalindrome(inputUserPalidrom)) {
+            console.log("Число " + number + " является палиндромом.");
+            UserP.innerText = "Число " + number + " является палиндромом.";
+        } else {
+            console.log("Число " + number + " не является палиндромом.");
+            UserP.innerText = "Число " + number + " не является палиндромом.";
+
+        }
+    } else {
+       console.log("Вы ввели неверное число. Пожалуйста, введите пятизначное число.");
+        UserP.innerText = "Вы ввели неверное число. Пожалуйста, введите пятизначное число.";
+   }
+}
+
+//
+//конвертор
+//
+btnExchange.onclick = (ev) =>
+{
+    console.log("click")
+    ev.preventDefault()
+
+    let count = inlineCount.value
+    console.log(count)
+    let exchange = selectCurrency.value
+    console.log(exchange)
+
+    let result = count*exchange
+
+    console.log(result)
+
+
+    return false
+}
+
+
+
+
+
+//
+//Sale%
+//
+let SumBuy ;
+
+inputUserSumBuy.onchange = () =>
+{
+    SumBuy = parseInt(inputUserSumBuy.value);
+    if (SumBuy < 200 && SumBuy < 300)
+    {
+        let discont = SumBuy * 0.03;
+        SumBuy -= discont;
+        inputUserSale.innerText = "Your SALE 3%" + SumBuy;
+    }else if (SumBuy >=301 && SumBuy < 499)
+    {
+        let discont = SumBuy * 0.05;
+        SumBuy -= discont;
+        inputUserSale.innerText = "Your SALE 5%" + SumBuy;
+    }
+    else if(SumBuy >500 )
+    {
+        let discont = SumBuy * 0.07;
+        SumBuy -= discont;
+        inputUserSale.innerText = "Your SALE 7%" + SumBuy;
+    }
+
+
+}
+//
+// Окружность круга
+//
+let Circum;
+
+UserCircumference.onchange = () =>
+{
+    Circum = parseInt(UserCircumference.value);
+}
+let squarePerimeter;
+UserPerimeter.onchange = () =>
+{
+    squarePerimeter = parseFloat(UserPerimeter.value);
+    const radius = Circum / (2 * Math.PI);
+    const sideLength = squarePerimeter / 4;
+    if (sideLength >= radius * 2) {
+        console.log("Окружность может поместиться в указанный квадрат.");
+        UserCircle.value = "Окружность может поместиться в указанный квадрат.";
+    }
+    else {
+        console.log("Окружность не может поместиться в указанный квадрат.");
+        UserCircle.value = "Окружность не может поместиться в указанный квадрат";
+    }
+}
+//
+//Вопрос пользователю
+//
+let count = 0;
+question1_answer1.onclick = () =>
+{
+    count += 3;
+    console.log(" 3 "+ count);
+    UserCountRatings.value = "Your Rating :" + count;
+}
+question2_answer1.onclick = () =>
+{
+    count+= 3;
+    console.log(" 3 " + count);
+    UserCountRatings.value = "Your Rating :" + count;
+}
+question3_answer2.onclick = () =>
+{
+    count+= 3;
+    console.log(" 3 "+ count);
+    UserCountRatings.value = "Your Rating :" + count;
+}
+UserCountRatings.value = "Your Rating : 0";
+
+//
+//YearUser
+//
+let DayCount;
+UserDay.onclick = () => {
+    DayCount = parseInt(UserDay.value);
+    checkAndDisplayNextDate();
+}
+
+let MonthCount;
+UserMonth.onchange = () => {
+    MonthCount = parseInt(UserMonth.value);
+    checkAndDisplayNextDate();
+}
+
+let YearCount;
+UserYearChoise.onchange = () => {
+    YearCount = parseInt(UserYearChoise.value);
+    checkAndDisplayNextDate();
+}
+
+function checkAndDisplayNextDate() {
+    if (DayCount && MonthCount && YearCount) {
+        let daysInMonth = [31, 28 + (YearCount % 4 === 0 && (YearCount % 100 !== 0 || YearCount % 400 === 0)), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+        // Проверяем допустимость даты
+        if (DayCount > 0 && DayCount <= daysInMonth[MonthCount - 1]) {
+            // Определяем следующую дату
+            let nextDay = DayCount + 1;
+            let nextMonth = MonthCount;
+            let nextYear = YearCount;
+
+            if (nextDay > daysInMonth[MonthCount - 1]) {
+                nextDay = 1;
+                nextMonth++;
+                if (nextMonth > 12) {
+                    nextMonth = 1;
+                    nextYear++;
+                }
+            }
+
+            // Выводим результат
+            console.log(`Следующая за ${DayCount}.${MonthCount}.${YearCount} дата: ${nextDay}.${nextMonth}.${nextYear}`);
+            if (UserNextYear) {
+                UserNextYear.value = `Следующая за ${DayCount}.${MonthCount}.${YearCount} дата: ${nextDay}.${nextMonth}.${nextYear}`;
+            }
+        } else {
+            console.log('Выбрана некорректная дата.');
+            if (UserNextYear) {
+                UserNextYear.value = 'Выбрана некорректная дата.';
+            }
+        }
+    } else {
+        console.log('Введите полную дату.');
+        if (UserNextYear) {
+            UserNextYear.value = 'Введите полную дату.';
+        }
+    }
+}
+
+
+
+
+</script>
+
+
+</body>
+</html>
