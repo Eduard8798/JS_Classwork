@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>
+    <select id="npAreas">
+
+    </select>
+</div>
+
+<script>
+
+    let region = [];
+
+
+    let selectArea = document.getElementById("npAreas")
+    function buildAreas()
+    {
+        selectArea.innerHTML = ''
+        areas.forEach(area => {
+
+            let option = document.createElement('option')
+            option.innerText = area.Description
+            option.value = area.Ref
+            option.dataset.AreasCenter = area.AreasCenter
+            selectArea.appendChild(option)
+
+        })
+    }
+
+    const aptKey = 'ad4d5f7a7df73eada37ce0ee1aa95b0b';
+
+    function buidCitices ()
+    {
+
+    }
+
+
+    let areas = []
+    selectArea.onchange = (ev) => {
+
+        let areaOption = selectArea.children[selectArea.selectedIndex]
+        let areaCenter = areaOption.dataset.AreasCenter
+        let areaRef = selectArea.value
+
+        console.log(areaCenter)
+
+
+
+        fetch('https://api.novaposhta.ua/v2.0/json/', {
+            method: 'POST',
+            body: JSON.stringify({
+                "apiKey": aptKey,
+                "modelName": "AddressGeneral",
+                "calledMethod": "getAreas",
+                "methodProperties": {
+
+                }
+
+            })
+        })
+            .then(res => res.json())
+            .then(jsonResponse => {
+                if (!jsonResponse.success) {
+                    throw {message: 'Dara Error'}
+                }
+               console.log( jsonResponse.data)
+                console.log(areas)
+                buildAreas()
+
+            })
+            .catch(err => {
+                console.error('Error')
+                console.error(err)
+            })
+    }
+</script>
+</body>
+</html>
